@@ -1,0 +1,6 @@
+{
+  "name": "Food Ghor — Premium Bengali Gur Showcase",
+  "description": "Food Ghor-এর গুড়কেন্দ্রিক জগতে আবিষ্কার করুন বাংলার পরিচিত স্বাদ, ঐতিহ্য এবং গুড়ের নানা সংগ্রহ।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
