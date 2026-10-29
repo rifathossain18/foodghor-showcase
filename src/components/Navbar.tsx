@@ -74,7 +74,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
             className="flex items-center gap-3 shrink-0 focus-visible:outline-2 focus-visible:outline-[#234735] rounded-md py-1"
           >
             <img
-              src="/assets/food_ghor_logo_transparent.png"
+              src={ `${import.meta.env.BASE_URL}public/assets/food_ghor_logo_transparent.png` }
               alt="Food Ghor অফিসিয়াল লোগো"
               className="h-11 w-auto object-contain filter drop-shadow-xs"
               width={44}
@@ -158,7 +158,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
         <div className="p-5 border-b border-[#E5DEC9] flex items-center justify-between">
           <div className="flex items-center gap-2.5">
             <img
-              src="/assets/food_ghor_logo_transparent.png"
+              src={ `${import.meta.env.BASE_URL}public/assets/food_ghor_logo_transparent.png` }
               alt="Food Ghor লোগো"
               className="h-9 w-auto object-contain"
               width={36}

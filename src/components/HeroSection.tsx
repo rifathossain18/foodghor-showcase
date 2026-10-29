@@ -85,7 +85,7 @@ export const HeroSection: React.FC = () => {
             <div className="relative mx-auto rounded-2xl overflow-hidden shadow-xl border border-[#E5DEC9] bg-[#EFE8DC]">
               
               <img
-                src="/src/assets/images/hero_gur_composition_1793267327259.jpg"
+                src={ `${import.meta.env.BASE_URL}public/assets/hero_gur_composition_1793267327259.jpg` }
                 alt="বাঙালির ঐতিহ্যবাহী খেজুরের পাটালি ও দানাদার গুড়ের শৈল্পিক পরিবেশনা"
                 className="w-full h-auto aspect-16/9 lg:aspect-4/3 object-cover hover:scale-[1.02] transition-transform duration-700"
                 referrerPolicy="no-referrer"

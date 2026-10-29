@@ -54,7 +54,7 @@ export const GurStorySection: React.FC = () => {
             <div className="relative rounded-2xl overflow-hidden border border-[#E5DEC9] bg-[#EFE8DC] shadow-lg">
               
               <img
-                src="/src/assets/images/story_pitha_gur_1793267329135.jpg"
+                src={ `${import.meta.env.BASE_URL}public/assets/story_pitha_gur_1793267329135.jpg` }
                 alt="ঐতিহ্যবাহী ধোঁয়া ওঠা শীতের ভাপা পিঠা ও মাটির পাত্রে খাঁটি নলেন গুড়"
                 className="w-full h-auto aspect-4/3 object-cover hover:scale-[1.02] transition-transform duration-700"
                 loading="lazy"

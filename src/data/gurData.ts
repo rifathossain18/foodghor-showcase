@@ -1,5 +1,12 @@
 import { GurProduct, FAQItem, FeatureItem, GalleryItem } from '../types/gur';
 
+// ছবিগুলো import করুন (Vite নিজেই হ্যান্ডল করবে)
+import heroGurComposition from '../assets/images/hero_gur_composition_1793267327259.jpg';
+import productKhejurerGur from '../assets/images/product_khejurer_gur_1793267326981.jpg';
+import productPataliGur from '../assets/images/product_patali_gur_1793267328986.jpg';
+import productJholaGur from '../assets/images/product_jhola_gur_1793267329124.jpg';
+import storyPithaGur from '../assets/images/story_pitha_gur_1793267329135.jpg';
+
 export const GUR_PRODUCTS: GurProduct[] = [
   {
     id: 'khejurer-gur',
@@ -14,7 +21,7 @@ export const GUR_PRODUCTS: GurProduct[] = [
     sweetnessProfile: 'গাঢ় প্রাকৃতিক ক্যারামেল মিষ্টি ও মৃদু স্মোকি সুবাস',
     sampleWeight: '৫০০ গ্রাম / ১ কেজি (নমুনা)',
     samplePrice: '৳৪৫০ (নমুনা মূল্য)',
-    image: '/src/assets/images/product_khejurer_gur_1793267326981.jpg',
+    image: productKhejurerGur,
     altText: 'মাটির পাত্রে সাজানো ঐতিহ্যবাহী খাঁটি দানাদার খেজুরের গুড়',
     season: 'পৌষ ও মাঘের শীতকাল',
   },
@@ -31,7 +38,7 @@ export const GUR_PRODUCTS: GurProduct[] = [
     sweetnessProfile: 'ঘন মিষ্টতা ও মাটির খাঁটি সোঁদা সুগন্ধ',
     sampleWeight: '৫০০ গ্রাম / ১ কেজি (নমুনা)',
     samplePrice: '৳৫০০ (নমুনা মূল্য)',
-    image: '/src/assets/images/product_patali_gur_1793267328986.jpg',
+    image: productPataliGur,
     altText: 'পিতলের থালায় কাটা ঐতিহ্যবাহী ঘন বাদামি পাটালি গুড়',
     season: 'শীতের মৌসুম',
   },
@@ -48,7 +55,7 @@ export const GUR_PRODUCTS: GurProduct[] = [
     sweetnessProfile: 'উজ্জ্বল রেশমি মিষ্টতা ও তাজা নলেন রসের সুবাস',
     sampleWeight: '৫০০ গ্রাম / ১ কেজি (নমুনা)',
     samplePrice: '৳৪৮০ (নমুনা মূল্য)',
-    image: '/src/assets/images/product_jhola_gur_1793267329124.jpg',
+    image: productJholaGur,
     altText: 'মাটির ভাঁড়ে ঢালা হচ্ছে সোনালী তরল খাঁটি ঝোলা গুড়',
     season: 'শীতের বিশেষ আগমনী',
   },
@@ -109,35 +116,35 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gallery-1',
     title: 'ঐতিহ্যবাহী গুড়ের থালি',
     subtitle: 'খেজুরের গুড় ও পাটালির মাটির পাত্রে নিবেদন',
-    image: '/src/assets/images/hero_gur_composition_1793267327259.jpg',
+    image: heroGurComposition,
     category: 'সংগ্রহ ও আয়োজন',
   },
   {
     id: 'gallery-2',
     title: 'দানাদার খেজুরের চাকা',
     subtitle: 'রোদের আলোয় স্ফটিকের মতো জ্বলজ্বলে খাঁটি খেজুরের গুড়',
-    image: '/src/assets/images/product_khejurer_gur_1793267326981.jpg',
+    image: productKhejurerGur,
     category: 'খেজুরের গুড়',
   },
   {
     id: 'gallery-3',
     title: 'হস্তনির্মিত পাটালি ব্লক',
     subtitle: 'ঘন বাদামি রঙের নরম স্লাইস পাটালি',
-    image: '/src/assets/images/product_patali_gur_1793267328986.jpg',
+    image: productPataliGur,
     category: 'পাটালি গুড়',
   },
   {
     id: 'gallery-4',
     title: 'সোনালি ঝোলা গুড়ের ধারা',
     subtitle: 'মাটির পাত্রে তাজা তরল নলেন গুড়ের প্রবাহ',
-    image: '/src/assets/images/product_jhola_gur_1793267329124.jpg',
+    image: productJholaGur,
     category: 'ঝোলা গুড়',
   },
   {
     id: 'gallery-5',
     title: 'শীতের গরম ভাপা পিঠা ও গুড়',
     subtitle: 'বাঙালির রান্নাঘরে পিঠাপুলির চিরচেনা মিষ্টি উৎসব',
-    image: '/src/assets/images/story_pitha_gur_1793267329135.jpg',
+    image: storyPithaGur,
     category: 'বাঙালির ঐতিহ্য',
   },
 ];
