@@ -31,7 +31,7 @@ export const GurCollection: React.FC = () => {
           {/* Illustrative showcase note */}
           <div className="mt-4 inline-flex items-center gap-1.5 text-xs text-[#6A3E26] bg-white/70 px-3.5 py-1.5 rounded-full border border-[#E5DEC9]/80 shadow-2xs">
             <Info className="w-3.5 h-3.5 text-[#B89555] shrink-0" />
-            <span>প্রদর্শনী শোকেস: এখানে প্রদর্শিত তথ্য ও মূল্য নমুনা হিসেবে উপস্থাপন করা হয়েছে</span>
+            <span>pure natural authentic</span>
           </div>
         </div>
 

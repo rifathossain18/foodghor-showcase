@@ -73,7 +73,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({ product,
           {/* Sample Pricing Strip & Notice */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-xl bg-[#EFE8DC]/80 border border-[#E5DEC9]">
             <div>
-              <span className="text-xs text-[#6A3E26] font-medium block">নমুনা ওজন ও মূল্য</span>
+              <span className="text-xs text-[#6A3E26] font-medium block">ওজন ও মূল্য</span>
               <div className="flex items-baseline gap-2 mt-0.5">
                 <span className="text-xl font-bold text-[#173324] tabular-nums font-mono">
                   {product.samplePrice}
@@ -85,7 +85,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({ product,
             </div>
             <div className="flex items-center gap-1.5 text-xs text-[#6A3E26] bg-white/60 px-3 py-1.5 rounded-md border border-[#E5DEC9]">
               <Info className="w-3.5 h-3.5 text-[#B89555] shrink-0" />
-              <span>প্রদর্শনী শোকেস (ক্রয়াদেশ প্রযোজ্য নয়)</span>
+              <span>100% প্রাকৃতিক</span>
             </div>
           </div>
 

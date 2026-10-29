@@ -28,7 +28,7 @@ export const BrandIntroduction: React.FC = () => {
                   &ldquo;প্রকৃতির স্বাদে, শেকড়ের টানে—গুড়ের মিষ্টিতে ফিরুক চেনা দিনের গল্প।&rdquo;
                 </p>
                 <p className="mt-1 font-semibold text-[#173324] text-[11px] uppercase tracking-wider">
-                  — Food Ghor চিন্তাধারা
+                  — Food Ghor
                 </p>
               </div>
 

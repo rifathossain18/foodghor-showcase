@@ -9,7 +9,7 @@ export const ContactSection: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setDemoFeedback('এটি একটি ডেমো ফর্ম। কোনো তথ্য সার্ভারে পাঠানো হয়নি।');
+    setDemoFeedback('Success! Your message has been submitted.');
     setFormData({ name: '', contact: '', message: '' });
   };
 
@@ -36,31 +36,35 @@ export const ContactSection: React.FC = () => {
               </div>
 
               <p className="text-sm sm:text-base text-[#24251F]/80 leading-relaxed mt-4">
-                Food Ghor বাংলার ঐতিহ্যবাহী গুড়ের মিষ্টতাকে ঘরে ঘরে পৌঁছে দেওয়ার একটি নিবেদিত শৈল্পিক উদ্যোগ। এটি একটি ফ্রন্টএন্ড শোকেস সংস্করণ।
+                Food Ghor বাংলার ঐতিহ্যবাহী গুড়ের মিষ্টতাকে ঘরে ঘরে পৌঁছে দেওয়ার একটি নিবেদিত শৈল্পিক উদ্যোগ। 
               </p>
 
               <div className="mt-8 space-y-4 text-sm text-[#24251F]/85">
                 <div className="flex items-center gap-3 p-3 rounded-lg bg-white border border-[#E5DEC9]">
                   <Phone className="w-4 h-4 text-[#234735] shrink-0" />
                   <div>
-                    <span className="text-[11px] text-[#6A3E26] font-medium block">হেল্পলাইন (নমুনা)</span>
-                    <span className="font-semibold text-[#173324]">+৮৮০ ১৭০০-০০০০০০ (ডেমো)</span>
+                    <span className="text-[11px] text-[#6A3E26] font-medium block">হেল্পলাইন</span>
+                    <span className="font-semibold text-[#173324]">+8801772494018</span>
+                    <br />
+                    <span className="font-semibold text-[#173324]">+8801824849806</span>
+                    <br/>
+                    <span className="font-semibold text-[#173324]">+8801642695161</span>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-3 p-3 rounded-lg bg-white border border-[#E5DEC9]">
                   <Mail className="w-4 h-4 text-[#234735] shrink-0" />
                   <div>
-                    <span className="text-[11px] text-[#6A3E26] font-medium block">ইমেইল ঠিকানা (নমুনা)</span>
-                    <span className="font-semibold text-[#173324]">hello@foodghor.demo</span>
+                    <span className="text-[11px] text-[#6A3E26] font-medium block">ইমেইল ঠিকানা</span>
+                    <span className="font-semibold text-[#173324]">mdrifathossainsagor1@gmail.com</span>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-3 p-3 rounded-lg bg-white border border-[#E5DEC9]">
                   <MapPin className="w-4 h-4 text-[#234735] shrink-0" />
                   <div>
-                    <span className="text-[11px] text-[#6A3E26] font-medium block">ঠিকানা (প্রদর্শনীয়)</span>
-                    <span className="font-semibold text-[#173324]">ঢাকা, বাংলাদেশ</span>
+                    <span className="text-[11px] text-[#6A3E26] font-medium block">ঠিকানা</span>
+                    <span className="font-semibold text-[#173324]">খুলনা, বাংলাদেশ</span>
                   </div>
                 </div>
               </div>
@@ -69,7 +73,7 @@ export const ContactSection: React.FC = () => {
             <div className="mt-8 p-4 rounded-xl bg-[#FAF7F2] border border-[#E5DEC9] text-xs text-[#24251F]/70 flex items-start gap-2.5">
               <AlertCircle className="w-4 h-4 text-[#B89555] shrink-0 mt-0.5" />
               <span>
-                এটি একটি ডেমো শোকেস প্ল্যাটফর্ম। কোনো আর্থিক লেনদেন বা ব্যক্তিগত তথ্য সংগ্রহ করা হয় না।
+                Pure - Natural - Authentic: Food Ghor-এর গুড়ের সংগ্রহে কোনো কৃত্রিম সংযোজন নেই। প্রতিটি পণ্য খাঁটি এবং প্রাকৃতিক উপাদান দ্বারা তৈরি, যা আপনাকে বাংলার ঐতিহ্যবাহী স্বাদ উপভোগ করতে সাহায্য করে।
               </span>
             </div>
           </div>
@@ -79,7 +83,7 @@ export const ContactSection: React.FC = () => {
               
               <div className="mb-6">
                 <h3 className="text-xl sm:text-2xl font-bold text-[#173324]">
-                  যোগাযোগ ফরম (প্রদর্শনীয়)
+                  যোগাযোগ ফরম
                 </h3>
                 <p className="text-xs sm:text-sm text-[#24251F]/70 mt-1">
                   ব্র্যান্ড ইন্টারফেস পরখ করার জন্য নিচের ফরমটি ব্যবহার করতে পারেন
@@ -150,7 +154,7 @@ export const ContactSection: React.FC = () => {
                     type="submit"
                     className="w-full sm:w-auto px-6 py-3 text-sm font-semibold text-[#FAF7F2] bg-[#234735] hover:bg-[#173324] rounded-lg transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-xs focus-visible:outline-2 focus-visible:outline-[#234735]"
                   >
-                    <span>বার্তা পাঠান (ডেমো সাবমিট)</span>
+                    <span>বার্তা পাঠান </span>
                     <Send className="w-4 h-4" />
                   </button>
                 </div>

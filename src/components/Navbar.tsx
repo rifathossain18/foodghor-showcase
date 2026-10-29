@@ -212,7 +212,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
             <span>প্রকৃতির স্বাদে, শেকড়ের টানে</span>
           </div>
           <p className="text-[11px] text-[#24251F]/70">
-            বাংলার ঐতিহ্যবাহী গুড় নিয়ে নিবেদিত বিশেষ শোকেস।
+            বাংলার ঐতিহ্যবাহী গুড়।
           </p>
         </div>
       </aside>

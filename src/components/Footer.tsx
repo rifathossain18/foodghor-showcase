@@ -59,7 +59,7 @@ export const Footer: React.FC = () => {
             </div>
 
             <div className="mt-6 text-xs text-[#EFE8DC]/60">
-              <span>প্রদর্শনী সংস্করণ · কোনো বাণিজ্যিক লেনদেন নয়</span>
+              <span></span>
             </div>
           </div>
 
@@ -122,8 +122,8 @@ export const Footer: React.FC = () => {
           </p>
           <div className="flex items-center gap-4 text-[11px] text-[#EFE8DC]/60">
             <span>শতভাগ গুড় নিবেদিত</span>
-            <span aria-hidden="true">·</span>
-            <span>নমুনা শোকেস সংস্করণ</span>
+            <span aria-hidden="true"></span>
+            <span></span>
           </div>
         </div>
 
