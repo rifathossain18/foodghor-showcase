@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import.meta.env.BASE_URL;
+
 import { GALLERY_ITEMS } from '../data/gurData';
 import { GalleryItem } from '../types/gur';
 import { GalleryModal } from './GalleryModal';

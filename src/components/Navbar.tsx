@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import.meta.env.BASE_URL;
+
 import { Menu, X, ArrowUpRight, Sparkles } from 'lucide-react';
 
 interface NavbarProps {

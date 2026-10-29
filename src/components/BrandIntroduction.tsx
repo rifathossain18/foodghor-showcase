@@ -1,5 +1,5 @@
 import React from 'react';
-import.meta.env.BASE_URL;
+
 import { Heart, Compass, CheckCircle2 } from 'lucide-react';
 
 export const BrandIntroduction: React.FC = () => {
@@ -15,7 +15,7 @@ export const BrandIntroduction: React.FC = () => {
               
               <div className="rounded-2xl overflow-hidden border border-[#E5DEC9] bg-[#EFE8DC] shadow-md">
                 <img
-                  src="/src/assets/images/product_jhola_gur_1793267329124.jpg"
+                  src="${import.meta.env.BASE_URL}assets/images/product_jhola_gur_1793267329124.jpg"
                   alt="মাটির পাত্রে সোনালী তরল নলেন ঝোলা গুড় ঢালার মুহূর্ত"
                   className="w-full h-auto aspect-4/3 object-cover"
                   loading="lazy"

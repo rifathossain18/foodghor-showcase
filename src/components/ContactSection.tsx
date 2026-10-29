@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import.meta.env.BASE_URL;
+
 import { Phone, Mail, MapPin, Send, AlertCircle, CheckCircle } from 'lucide-react';
 
 export const ContactSection: React.FC = () => {
@@ -25,7 +25,7 @@ export const ContactSection: React.FC = () => {
               {/* Logo & title */}
               <div className="flex items-center gap-3 mb-4">
                 <img
-                  src="/assets/food_ghor_logo_transparent.png"
+                  src="${import.meta.env.BASE_URL}/assets/food_ghor_logo_transparent.png"
                   alt="Food Ghor অফিসিয়াল লোগো"
                   className="h-12 w-auto object-contain"
                   width={48}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight, Eye } from 'lucide-react';
 import { GurProduct } from '../types/gur';
-import.meta.env.BASE_URL;
+
 
 interface GurProductCardProps {
   product: GurProduct;

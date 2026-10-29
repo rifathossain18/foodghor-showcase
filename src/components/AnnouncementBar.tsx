@@ -1,5 +1,5 @@
 import React from 'react';
-import.meta.env.BASE_URL;
+
 
 export const AnnouncementBar: React.FC = () => {
   return (

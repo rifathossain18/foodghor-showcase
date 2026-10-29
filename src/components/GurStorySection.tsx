@@ -1,5 +1,5 @@
 import React from 'react';
-import.meta.env.BASE_URL;
+
 import { Sparkles, Utensils, Flame } from 'lucide-react';
 
 export const GurStorySection: React.FC = () => {

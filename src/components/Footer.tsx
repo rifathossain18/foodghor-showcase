@@ -1,5 +1,5 @@
 import React from 'react';
-import.meta.env.BASE_URL;
+
 import { ArrowUp } from 'lucide-react';
 
 export const Footer: React.FC = () => {
@@ -37,7 +37,7 @@ export const Footer: React.FC = () => {
             <div>
               <div className="flex items-center gap-3">
                 <img
-                  src="/assets/food_ghor_logo_transparent.png"
+                  src="${import.meta.env.BASE_URL}/assets/food_ghor_logo_transparent.png"
                   alt="Food Ghor লোগো"
                   className="h-12 w-auto object-contain filter drop-shadow-xs"
                   width={48}

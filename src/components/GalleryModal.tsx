@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import.meta.env.BASE_URL;
+
 import { X } from 'lucide-react';
 import { GalleryItem } from '../types/gur';
 

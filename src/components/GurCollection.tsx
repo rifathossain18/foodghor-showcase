@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import.meta.env.BASE_URL;
+
 import { GUR_PRODUCTS } from '../data/gurData';
 import { GurProduct } from '../types/gur';
 import { GurProductCard } from './GurProductCard';
