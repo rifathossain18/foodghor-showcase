@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Sparkles, Utensils, Flame } from 'lucide-react';
+import storyPithaGur from '../assets/images/story_pitha_gur_1793267329135.jpg';
 
 export const GurStorySection: React.FC = () => {
   return (
@@ -9,7 +10,6 @@ export const GurStorySection: React.FC = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
-          {/* Text Story Side */}
           <div className="lg:col-span-6 flex flex-col justify-center">
             
             <div className="flex items-center gap-2 text-xs md:text-sm font-semibold tracking-wider text-[#6A3E26] uppercase mb-3">
@@ -35,7 +35,6 @@ export const GurStorySection: React.FC = () => {
               </p>
             </div>
 
-            {/* Cultural highlights */}
             <div className="mt-8 pt-6 border-t border-[#E5DEC9] grid grid-cols-2 gap-4 text-xs sm:text-sm">
               <div className="flex items-center gap-2.5 text-[#173324] font-medium">
                 <Utensils className="w-4 h-4 text-[#B89555] shrink-0" />
@@ -49,12 +48,11 @@ export const GurStorySection: React.FC = () => {
 
           </div>
 
-          {/* Visual Story Side */}
           <div className="lg:col-span-6">
             <div className="relative rounded-2xl overflow-hidden border border-[#E5DEC9] bg-[#EFE8DC] shadow-lg">
               
               <img
-                src={ `${import.meta.env.BASE_URL}public/assets/story_pitha_gur_1793267329135.jpg` }
+                src={storyPithaGur}
                 alt="ঐতিহ্যবাহী ধোঁয়া ওঠা শীতের ভাপা পিঠা ও মাটির পাত্রে খাঁটি নলেন গুড়"
                 className="w-full h-auto aspect-4/3 object-cover hover:scale-[1.02] transition-transform duration-700"
                 loading="lazy"

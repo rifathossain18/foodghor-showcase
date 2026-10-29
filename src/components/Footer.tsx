@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { ArrowUp } from 'lucide-react';
+import foodGhorLogo from '../assets/images/food_ghor_logo_transparent.png';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -32,12 +33,11 @@ export const Footer: React.FC = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-[#234735]">
           
-          {/* Brand Info */}
           <div className="md:col-span-5 flex flex-col justify-between">
             <div>
               <div className="flex items-center gap-3">
                 <img
-                  src={ `${import.meta.env.BASE_URL}public/assets/food_ghor_logo_transparent.png` }
+                  src={foodGhorLogo}
                   alt="Food Ghor লোগো"
                   className="h-12 w-auto object-contain filter drop-shadow-xs"
                   width={48}
@@ -63,7 +63,6 @@ export const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div className="md:col-span-3">
             <h4 className="text-sm font-semibold uppercase tracking-wider text-[#B89555] mb-4">
               দ্রুত লিঙ্ক
@@ -83,7 +82,6 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Gur Categories */}
           <div className="md:col-span-4">
             <h4 className="text-sm font-semibold uppercase tracking-wider text-[#B89555] mb-4">
               গুড়ের জাত ও ঐতিহ্য
@@ -118,7 +116,6 @@ export const Footer: React.FC = () => {
 
         </div>
 
-        {/* Bottom copyright line */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#EFE8DC]/70 gap-4">
           <p>
             © {currentYear} Food Ghor — সর্বস্বত্ব সংরক্ষিত। বাংলার গুড়ের ঐতিহ্যবাহী প্রদর্শনী।

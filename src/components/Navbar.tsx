@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import { Menu, X, ArrowUpRight, Sparkles } from 'lucide-react';
+import foodGhorLogo from '../assets/images/food_ghor_logo_transparent.png';
 
 interface NavbarProps {
   onNavigate?: (id: string) => void;
@@ -18,7 +19,6 @@ export const Navbar: React.FC<NavbarProps> = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Prevent background scrolling when mobile menu is open & handle Escape key
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape' && isMobileMenuOpen) {
@@ -67,14 +67,13 @@ export const Navbar: React.FC<NavbarProps> = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-8">
-          {/* Zone 1: Official Logo + Brand Wordmark */}
           <a
             href="#home"
             onClick={(e) => handleLinkClick(e, '#home')}
             className="flex items-center gap-3 shrink-0 focus-visible:outline-2 focus-visible:outline-[#234735] rounded-md py-1"
           >
             <img
-              src={ `${import.meta.env.BASE_URL}public/assets/food_ghor_logo_transparent.png` }
+              src={foodGhorLogo}
               alt="Food Ghor অফিসিয়াল লোগো"
               className="h-11 w-auto object-contain filter drop-shadow-xs"
               width={44}
@@ -90,7 +89,6 @@ export const Navbar: React.FC<NavbarProps> = () => {
             </div>
           </a>
 
-          {/* Zone 2: Navigation Links */}
           <nav
             aria-label="প্রধান নেভিগেশন"
             className="hidden lg:flex items-center gap-7 text-[15px] font-medium text-[#24251F]/80"
@@ -108,7 +106,6 @@ export const Navbar: React.FC<NavbarProps> = () => {
             ))}
           </nav>
 
-          {/* Zone 3: Primary Action & Mobile Toggle */}
           <div className="flex items-center gap-3 shrink-0">
             <a
               href="#collection"
@@ -119,7 +116,6 @@ export const Navbar: React.FC<NavbarProps> = () => {
               <ArrowUpRight className="w-4 h-4" />
             </a>
 
-            {/* Mobile Hamburger Button */}
             <button
               type="button"
               onClick={() => setIsMobileMenuOpen(true)}
@@ -133,7 +129,6 @@ export const Navbar: React.FC<NavbarProps> = () => {
         </div>
       </header>
 
-      {/* Blurred Overlay Backdrop */}
       <div
         role="presentation"
         onClick={() => setIsMobileMenuOpen(false)}
@@ -145,7 +140,6 @@ export const Navbar: React.FC<NavbarProps> = () => {
         aria-hidden={!isMobileMenuOpen}
       />
 
-      {/* Slide-In Mobile Drawer */}
       <aside
         id="mobile-navigation-drawer"
         aria-label="মোবাইল নেভিগেশন মেনু"
@@ -154,11 +148,10 @@ export const Navbar: React.FC<NavbarProps> = () => {
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        {/* Drawer Header */}
         <div className="p-5 border-b border-[#E5DEC9] flex items-center justify-between">
           <div className="flex items-center gap-2.5">
             <img
-              src={ `${import.meta.env.BASE_URL}public/assets/food_ghor_logo_transparent.png` }
+              src={foodGhorLogo}
               alt="Food Ghor লোগো"
               className="h-9 w-auto object-contain"
               width={36}
@@ -184,7 +177,6 @@ export const Navbar: React.FC<NavbarProps> = () => {
           </button>
         </div>
 
-        {/* Drawer Links */}
         <div className="px-4 py-6 flex-1 overflow-y-auto">
           <nav className="flex flex-col space-y-1.5">
             {navLinks.map((link, idx) => (
@@ -202,7 +194,6 @@ export const Navbar: React.FC<NavbarProps> = () => {
             ))}
           </nav>
 
-          {/* Primary Action Button inside Drawer */}
           <div className="mt-8 pt-6 border-t border-[#E5DEC9]">
             <a
               href="#collection"
@@ -215,7 +206,6 @@ export const Navbar: React.FC<NavbarProps> = () => {
           </div>
         </div>
 
-        {/* Drawer Footer Brand Note */}
         <div className="p-5 bg-[#EFE8DC]/60 border-t border-[#E5DEC9]">
           <div className="flex items-center gap-2 text-xs text-[#173324] font-medium mb-1">
             <Sparkles className="w-3.5 h-3.5 text-[#B89555]" />
@@ -229,4 +219,3 @@ export const Navbar: React.FC<NavbarProps> = () => {
     </>
   );
 };
-

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Heart, Compass, CheckCircle2 } from 'lucide-react';
+import productJholaGur from '../assets/images/product_jhola_gur_1793267329124.jpg';
 
 export const BrandIntroduction: React.FC = () => {
   return (
@@ -9,14 +10,12 @@ export const BrandIntroduction: React.FC = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
-          {/* Image Side with editorial frame */}
           <div className="lg:col-span-5 order-2 lg:order-1">
             <div className="relative">
               
               <div className="rounded-2xl overflow-hidden border border-[#E5DEC9] bg-[#EFE8DC] shadow-md">
                 <img
-                  src=
-                  {`${import.meta.env.BASE_URL}public/assets/product_jhola_gur_1793267329124.jpg`}
+                  src={productJholaGur}
                   alt="মাটির পাত্রে সোনালী তরল নলেন ঝোলা গুড় ঢালার মুহূর্ত"
                   className="w-full h-auto aspect-4/3 object-cover"
                   loading="lazy"
@@ -24,7 +23,6 @@ export const BrandIntroduction: React.FC = () => {
                 />
               </div>
 
-              {/* Editorial pull quote note */}
               <div className="mt-4 p-4 rounded-xl bg-[#EFE8DC]/80 border border-[#E5DEC9] text-xs md:text-sm text-[#24251F]/80">
                 <p className="italic">
                   &ldquo;প্রকৃতির স্বাদে, শেকড়ের টানে—গুড়ের মিষ্টিতে ফিরুক চেনা দিনের গল্প।&rdquo;
@@ -37,7 +35,6 @@ export const BrandIntroduction: React.FC = () => {
             </div>
           </div>
 
-          {/* Text Side */}
           <div className="lg:col-span-7 order-1 lg:order-2">
             
             <div className="flex items-center gap-2 text-xs md:text-sm font-semibold tracking-wider text-[#6A3E26] uppercase mb-3">
@@ -58,7 +55,6 @@ export const BrandIntroduction: React.FC = () => {
               </p>
             </div>
 
-            {/* Key brand commitments (without unverified claims) */}
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="flex items-start gap-3 p-3.5 rounded-lg bg-[#FAF7F2] border border-[#E5DEC9]">
                 <CheckCircle2 className="w-5 h-5 text-[#234735] shrink-0 mt-0.5" />

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import { Phone, Mail, MapPin, Send, AlertCircle, CheckCircle } from 'lucide-react';
+import foodGhorLogo from '../assets/images/food_ghor_logo_transparent.png';
 
 export const ContactSection: React.FC = () => {
   const [formData, setFormData] = useState({ name: '', contact: '', message: '' });
@@ -8,7 +9,6 @@ export const ContactSection: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // PRD Mandatory requirement: Strictly frontend-only demo notice
     setDemoFeedback('এটি একটি ডেমো ফর্ম। কোনো তথ্য সার্ভারে পাঠানো হয়নি।');
     setFormData({ name: '', contact: '', message: '' });
   };
@@ -19,13 +19,11 @@ export const ContactSection: React.FC = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           
-          {/* Brand Info & Placeholders */}
           <div className="lg:col-span-5 flex flex-col justify-between">
             <div>
-              {/* Logo & title */}
               <div className="flex items-center gap-3 mb-4">
                 <img
-                  src={ `${import.meta.env.BASE_URL}public/assets/food_ghor_logo_transparent.png` }
+                  src={foodGhorLogo}
                   alt="Food Ghor অফিসিয়াল লোগো"
                   className="h-12 w-auto object-contain"
                   width={48}
@@ -41,7 +39,6 @@ export const ContactSection: React.FC = () => {
                 Food Ghor বাংলার ঐতিহ্যবাহী গুড়ের মিষ্টতাকে ঘরে ঘরে পৌঁছে দেওয়ার একটি নিবেদিত শৈল্পিক উদ্যোগ। এটি একটি ফ্রন্টএন্ড শোকেস সংস্করণ।
               </p>
 
-              {/* Demo contact info strip */}
               <div className="mt-8 space-y-4 text-sm text-[#24251F]/85">
                 <div className="flex items-center gap-3 p-3 rounded-lg bg-white border border-[#E5DEC9]">
                   <Phone className="w-4 h-4 text-[#234735] shrink-0" />
@@ -69,7 +66,6 @@ export const ContactSection: React.FC = () => {
               </div>
             </div>
 
-            {/* Showcase Disclaimer badge */}
             <div className="mt-8 p-4 rounded-xl bg-[#FAF7F2] border border-[#E5DEC9] text-xs text-[#24251F]/70 flex items-start gap-2.5">
               <AlertCircle className="w-4 h-4 text-[#B89555] shrink-0 mt-0.5" />
               <span>
@@ -78,7 +74,6 @@ export const ContactSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Demonstration Contact Form */}
           <div className="lg:col-span-7">
             <div className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E5DEC9] shadow-sm">
               
