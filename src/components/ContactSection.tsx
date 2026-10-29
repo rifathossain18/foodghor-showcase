@@ -25,7 +25,7 @@ export const ContactSection: React.FC = () => {
               {/* Logo & title */}
               <div className="flex items-center gap-3 mb-4">
                 <img
-                  src="${import.meta.env.BASE_URL}/assets/food_ghor_logo_transparent.png"
+                  src="/assets/food_ghor_logo_transparent.png"
                   alt="Food Ghor অফিসিয়াল লোগো"
                   className="h-12 w-auto object-contain"
                   width={48}
