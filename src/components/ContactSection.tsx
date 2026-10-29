@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import.meta.env.BASE_URL;
 import { Phone, Mail, MapPin, Send, AlertCircle, CheckCircle } from 'lucide-react';
 
 export const ContactSection: React.FC = () => {

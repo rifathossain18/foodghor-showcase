@@ -1,4 +1,5 @@
 import React from 'react';
+import.meta.env.BASE_URL;
 import { ArrowUp } from 'lucide-react';
 
 export const Footer: React.FC = () => {

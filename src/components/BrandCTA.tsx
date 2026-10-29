@@ -1,4 +1,5 @@
 import React from 'react';
+import.meta.env.BASE_URL;
 import { ArrowDown, Sparkles } from 'lucide-react';
 
 export const BrandCTA: React.FC = () => {

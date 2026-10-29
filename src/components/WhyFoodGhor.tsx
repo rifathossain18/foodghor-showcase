@@ -1,4 +1,5 @@
 import React from 'react';
+import.meta.env.BASE_URL;
 import { WHY_FOOD_GHOR_FEATURES } from '../data/gurData';
 import { Heart, Sparkles, Layers, Compass } from 'lucide-react';
 

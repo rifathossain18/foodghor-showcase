@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import.meta.env.BASE_URL;
 import { X, Check, Info, Sparkles, Calendar, Layers } from 'lucide-react';
 import { GurProduct } from '../types/gur';
 

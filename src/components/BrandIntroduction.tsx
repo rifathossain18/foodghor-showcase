@@ -1,4 +1,5 @@
 import React from 'react';
+import.meta.env.BASE_URL;
 import { Heart, Compass, CheckCircle2 } from 'lucide-react';
 
 export const BrandIntroduction: React.FC = () => {
